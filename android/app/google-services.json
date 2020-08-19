@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "101080636133",
+    "firebase_url": "https://class-management-system-cb9a7.firebaseio.com",
+    "project_id": "class-management-system-cb9a7",
+    "storage_bucket": "class-management-system-cb9a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101080636133:android:25bd2d9511acdb2a9d920c",
+        "android_client_info": {
+          "package_name": "com.karimulhasan.class_information_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101080636133-ieb05v6f1mha7i9713oaedks5v0girnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo3bwvAwQBMrLy2-MjN8SwjOrG8heb8fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101080636133-ieb05v6f1mha7i9713oaedks5v0girnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

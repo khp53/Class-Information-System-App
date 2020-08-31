@@ -1,7 +1,21 @@
+import 'package:class_information_system/pages/authentication/login.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:class_information_system/login/login.dart';
-// import 'package:firebase_auth/firebase_auth.dart';
+
+
+class WelcomeScreenBg extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return (MaterialApp(
+      home: Scaffold(
+        resizeToAvoidBottomPadding: false,
+        backgroundColor: Hexcolor('#1F2025'),
+        body: WelcomeScreen(),
+      ),
+      debugShowCheckedModeBanner: false,
+    ));
+  }
+}
 
 class WelcomeScreen extends StatefulWidget {
   @override
@@ -15,12 +29,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       children: [
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(0, 38, 0, 0),
+            padding: const EdgeInsets.fromLTRB(0, 60, 0, 0),
             child: Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/splash.png"),
-                  fit: BoxFit.fitWidth,
+                  image: AssetImage("assets/welcome1.png"),
+                  fit: BoxFit.contain,
                 ),
               ),
             ),
@@ -32,7 +46,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
-                padding: const EdgeInsets.fromLTRB(35, 50, 35, 0),
+                padding: const EdgeInsets.fromLTRB(35, 70, 35, 0),
                 child: ButtonTheme(
                   height: 50,
                   child: FlatButton(
@@ -42,6 +56,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
+                        fontFamily: 'ProductSans',
                       ),
                     ),
                     onPressed: () {
@@ -50,7 +65,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         MaterialPageRoute(builder: (context) => LoginBg()),
                       );
                     },
-                    color: Hexcolor('#54002A'),
+                    color: Hexcolor('#6C63FF'),
                   ),
                 ),
               ),
